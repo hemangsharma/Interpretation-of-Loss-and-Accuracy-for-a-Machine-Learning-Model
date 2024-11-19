@@ -10,6 +10,8 @@ To calculate the loss, a loss or cost function is used. There are several differ
 But how do we know if the loss is high or low?  Well, it depends on the problem and the cost function being used.<br><br>
 Let’s say we want to predict the color of a pixel, for whatever reason. For simplicity, let’s assume the value of a pixel can go from 0 to 255. We use the Mean Squared Error as our cost function.<br><br>
 In this example, having a loss of 1 would be tiny, while a loss of 100 would be really high:<br><br>
+
+<img src="images/1.svg"></img><br><br>
 ￼
 However, whether the loss is high or low is not the most important inference we can learn from it. If we plot loss results over time, we can see whether our model is learning, and how fast.<br><br>
 This is because, in Deep Learning, the loss function is used by the model to learn. The goal of the model is to minimize the value of the loss. This is done by using techniques such as gradient descent, which changes the model parameters using the information of the result of the loss.<br><br>
@@ -19,6 +21,10 @@ In our article about Learning Curves, we can learn more about how to interpret t
 ## 3. Accuracy
 Accuracy is more straightforward. It measures how well our model predicts by comparing the model predictions with the true values in terms of percentage.
 For example, let’s say we have a model for image classification that detects whether or not there is a cat in the image. We have 5 test images. If the model is able to predict correctly whether or not there is a cat in 3 of the images, it results in an accuracy of 60%:<br><br>
-￼
+
+<img src="images/3.webp"></img></img><br><br>
+
 Now, if we analyze these two measurements together, we can infer more information about how is our model working:<br><br>
 Having a low accuracy but a high loss would mean that the model makes big errors in most of the data. But, if both loss and accuracy are low, it means the model makes small errors in most of the data. However, if they’re both high, it makes big errors in some of the data. Finally, if the accuracy is high and the loss is low, then the model makes small errors on just some of the data, which would be the ideal case.<br><br>
+
+<img src="images/2.png">
